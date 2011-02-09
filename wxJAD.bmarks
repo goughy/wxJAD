@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<BrowseTracker_layout_file>
+	<ActiveTarget name="Debug" />
+	<File name="PropertiesDlg.cpp" open="0" top="0" tabpos="7">
+		<Cursor position="612" topLine="0" />
+	</File>
+	<File name="PropertiesDlg.h" open="0" top="0" tabpos="0">
+		<Cursor position="299" topLine="0" />
+	</File>
+	<File name="binreloc.c" open="0" top="0" tabpos="0">
+		<Cursor position="407" topLine="0" />
+	</File>
+	<File name="binreloc.h" open="0" top="0" tabpos="0">
+		<Cursor position="414" topLine="0" />
+	</File>
+	<File name="version.h" open="0" top="0" tabpos="1">
+		<Cursor position="37" topLine="0" />
+	</File>
+	<File name="wxJADApp.cpp" open="0" top="0" tabpos="3">
+		<Cursor position="3124" topLine="75" />
+	</File>
+	<File name="wxJADApp.h" open="0" top="0" tabpos="7">
+		<Cursor position="561" topLine="0" />
+	</File>
+	<File name="wxJADDropTarget.cpp" open="0" top="0" tabpos="0">
+		<Cursor position="626" topLine="0" />
+	</File>
+	<File name="wxJADDropTarget.h" open="0" top="0" tabpos="5">
+		<Cursor position="347" topLine="0" />
+	</File>
+	<File name="wxJADEntry.h" open="0" top="0" tabpos="0">
+		<Cursor position="752" topLine="9" />
+	</File>
+	<File name="wxJADEvent.h" open="0" top="0" tabpos="5">
+		<Cursor position="248" topLine="0" />
+	</File>
+	<File name="wxJADFileMgr.cpp" open="0" top="0" tabpos="1">
+		<Cursor position="12558" topLine="414" />
+	</File>
+	<File name="wxJADFileMgr.h" open="1" top="0" tabpos="2">
+		<Cursor position="1688" topLine="22" />
+	</File>
+	<File name="wxJADFrame.cpp" open="1" top="0" tabpos="3">
+		<Cursor position="4074" topLine="144" />
+	</File>
+	<File name="wxJADFrame.h" open="0" top="0" tabpos="6">
+		<Cursor position="1065" topLine="11" />
+	</File>
+	<File name="wxJADNotebook.cpp" open="1" top="0" tabpos="4">
+		<Cursor position="1917" topLine="63" />
+	</File>
+	<File name="wxJADNotebook.h" open="0" top="0" tabpos="1">
+		<Cursor position="190" topLine="0" />
+	</File>
+	<File name="wxJADTree.cpp" open="1" top="1" tabpos="1">
+		<Cursor position="6938" topLine="277" />
+		<BrowseMarks positions="" />
+		<Book_Marks positions="" />
+	</File>
+	<File name="wxJADTree.h" open="1" top="0" tabpos="5">
+		<Cursor position="995" topLine="11" />
+	</File>
+</BrowseTracker_layout_file>
