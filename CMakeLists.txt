@@ -16,8 +16,7 @@ if(WIN32)
 	set(wxWidgets_CONFIGURATION "mswud")
 endif(WIN32)
 
-find_package(wxWidgets COMPONENTS base aui core REQUIRED)
-
+find_package(wxWidgets COMPONENTS base aui core stc REQUIRED)
 if(WIN32)
 	FIND_LIBRARY(WX_stc
         NAMES
@@ -38,42 +37,38 @@ if(WIN32)
 	message(STATUS "WX_stc_INCLUDE_DIR = ${WX_stc_INCLUDE_DIR}")
 endif(WIN32)
 
-include_directories(${wxWidgets_INCLUDE_DIRS} ${WX_stc_INCLUDE_DIR})
+include( ${wxWidgets_USE_FILE} )
+#include_directories(${wxWidgets_INCLUDE_DIRS} ${WX_stc_INCLUDE_DIR})
 
-add_definitions(${wxWidgets_DEFINITIONS})
-if(UNIX)
-	add_definitions(-g -fPIC)
-endif(UNIX)
+#add_definitions(${wxWidgets_DEFINITIONS})
 
 set(SRCS
-	wxJADApp.cpp
-	wxJADApp.h
-	wxJADEvent.h
-	wxJADFileMgr.cpp
-	wxJADFileMgr.h
-	wxJADFrame.cpp
-	wxJADFrame.h
-	wxJADNotebook.cpp
-	wxJADNotebook.h
-	wxJADTree.cpp
-	wxJADTree.h
-	PropertiesDlg.cpp
-	PropertiesDlg.h
-	wxJADDropTarget.cpp
-	wxJADDropTarget.h
-	wxJADFile.h
+	src/wxJADApp.cpp
+	src/wxJADApp.h
+	src/wxJADEvent.h
+	src/wxJADFileMgr.cpp
+	src/wxJADFileMgr.h
+	src/wxJADFrame.cpp
+	src/wxJADFrame.h
+	src/wxJADNotebook.cpp
+	src/wxJADNotebook.h
+	src/wxJADTree.cpp
+	src/wxJADTree.h
+	src/PropertiesDlg.cpp
+	src/PropertiesDlg.h
+	src/wxJADDropTarget.cpp
+	src/wxJADDropTarget.h
+	src/wxJADFile.h
 )
 
 if(UNIX)
 	add_definitions(-g -fPIC -DENABLE_BINRELOC)
 	set(SRCS
 		${SRCS}
-		binreloc.c
-		binreloc.h
+		src/binreloc.c
+		src/binreloc.h
 	)
 endif(UNIX)
-
-add_definitions(${wxWidgets_DEFINITIONS})
 
 add_executable(wxJAD WIN32 ${SRCS})
 
