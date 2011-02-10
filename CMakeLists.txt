@@ -38,9 +38,6 @@ if(WIN32)
 endif(WIN32)
 
 include( ${wxWidgets_USE_FILE} )
-#include_directories(${wxWidgets_INCLUDE_DIRS} ${WX_stc_INCLUDE_DIR})
-
-#add_definitions(${wxWidgets_DEFINITIONS})
 
 set(SRCS
 	src/wxJADApp.cpp
@@ -74,5 +71,11 @@ add_executable(wxJAD WIN32 ${SRCS})
 
 target_link_libraries(wxJAD ${wxWidgets_LIBRARIES} ${WX_stc})
 
+install(TARGETS wxJAD RUNTIME DESTINATION bin)
+if(WIN32)
+	install(PROGRAMS JAD/jad.exe DESTINATION bin)
+else()
+	install(PROGRAMS JAD/jad DESTINATION bin)
+endif()
 
 message(STATUS "Finished " ${CMAKE_CURRENT_LIST_FILE})

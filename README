@@ -1,0 +1,61 @@
+
+wxJAD
+
+---------------------------------------------------------------------
+
+wxJAD is a simple cross platform UI wrapper around the command
+line JAD decompiler.  It was born out of frustration with the
+DJ Java Decompiler.
+
+wxJAD is not a Java editor, nor is it ever liekly to be.  It sole
+purpose is as a class file viewer and code browser where the source
+is unavailable.  I have found this invaluable when attempting to 
+locate the source of issues in library code upon which my code
+inevitably depends.
+
+Dependencies:
+
+Use CMake >= 2.6 to build.
+
+See: http://www.cmake.org
+
+wxJAD depends on wxWidgets.  I have used version 2.8.10
+during development, but any 2.8 release should work.
+
+See: http://www.wxwidgets.org
+
+Andrew Gough
+andrew@goughy.org
+
+---------------------------------------------------------------------
+
+Installation
+============
+
+If you have CMake and wxWidgets installed, it should be as easy as
+
+Unix
+----
+
+$ cd wxJAD && mkdir build && cd build
+$ cmake ..
+$ make
+$ sudo make install
+
+
+Windows
+-------
+
+Well, you're on your own to source a C++ compiler.  It has been built
+using Visual Studio, as:
+
+c:\wxJAD> mkdir build
+c:\wxJAD> cd build
+c:\wxJAD\build> cmake -G "Visual Studio 8 2005" (for example)
+c:\wxJAD\build> 
+
+Now there should be a wxJAD.sln file (or equivalent) you can open in Visual
+Studio.
+
+Note: This process has not been well tested.
+
